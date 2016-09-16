@@ -30,8 +30,12 @@
 <center><h3>Student Details</h3></center>
 <center><table border="2">
     <tr>
-        <td>Name:</td>
+        <td>First</td>
         <td> <c:out value="${detailToDo.name}"/></td>
+    </tr>
+    <tr>
+        <td>Last</td>
+        <td> <c:out value="${detailToDo.last}"/></td>
     </tr>
     <tr>
         <td>Major:</td>
