@@ -1,6 +1,6 @@
 package com.ironyard.servlets;
 
-import com.ironyard.data.ToDoItem;
+import com.ironyard.data.studentID;
 import com.ironyard.service.ToDoService;
 
 import javax.servlet.RequestDispatcher;
@@ -9,7 +9,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.List;
 
 /**
@@ -41,9 +40,9 @@ public class MyFirstServlet extends HttpServlet {
                             HttpServletResponse response) throws ServletException, IOException {
 
         ToDoService todoServ = new ToDoService();
-        List<ToDoItem> items = todoServ.getAllToDoItems();
+        List<studentID> items = todoServ.getAllToDoItems();
         long requestedId = Long.parseLong(request.getParameter("id"));
-        for(ToDoItem t:items){
+        for(studentID t:items){
             if(t.getId() == requestedId){
                 request.setAttribute("detailToDo",t);
                 break;
@@ -57,7 +56,7 @@ public class MyFirstServlet extends HttpServlet {
     private void showList(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // do some work
         ToDoService todoServ = new ToDoService();
-        List<ToDoItem> items = todoServ.getAllToDoItems();
+        List<studentID> items = todoServ.getAllToDoItems();
         request.setAttribute("stufftodo",items);
 
         // then forward to JSP for display

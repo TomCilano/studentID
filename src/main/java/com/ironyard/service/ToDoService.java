@@ -1,6 +1,6 @@
 package com.ironyard.service;
 
-import com.ironyard.data.ToDoItem;
+import com.ironyard.data.studentID;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,12 +10,13 @@ import java.util.List;
  */
 public class ToDoService {
 
-    public List<ToDoItem> getAllToDoItems(){
-        List<ToDoItem> foundAll = new ArrayList<>();
-        foundAll.add(new ToDoItem("Take dog for a walk.", "Dog name:Tilly", 1));
-        foundAll.add(new ToDoItem("Wash dishes.","Use soap",2));
-        foundAll.add(new ToDoItem("Play video game.","On the XBOX",3));
-        foundAll.add(new ToDoItem("Do homework.", "Copy from friend",4));
+    public List<com.ironyard.data.studentID> getAllToDoItems(){
+        List<com.ironyard.data.studentID> foundAll = new ArrayList<>();
+        foundAll.add(new com.ironyard.data.studentID("Tom", "Cilano", "Conchology", 123456789,2.3,3.4,3.4));
+        foundAll.add(new com.ironyard.data.studentID("Nate", "Jong Ill","Nephology",234567890,3.4,2.3,3.0));
+        foundAll.add(new com.ironyard.data.studentID("Reeva", "D. Eisenhower","Eschatology",345678901,2.3,4.5,3.4));
+        foundAll.add(new com.ironyard.data.studentID("Faviana", "von Bismark", "Speleology",456789012,2.0,2.4,3.4));
+        foundAll.add(new com.ironyard.data.studentID("Raul","Bonaparte", "Cetology",567890123,3.2,2.3,2.4));
         return foundAll;
     }
 
