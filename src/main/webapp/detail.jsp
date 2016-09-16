@@ -34,14 +34,14 @@
         <td> <c:out value="${detailToDo.name}"/></td>
     </tr>
     <tr>
-        <td>Detail:</td>
+        <td>Major:</td>
         <td> <c:out value="${detailToDo.detail}"/></td>
     </tr>
     <tr>
         <td>SSN:</td>
         <td> <c:out value="${detailToDo.id}"/></td>
     </tr>
-    <td>gpa:</td>
+    <td>GPA:</td>
     <td> <c:out value="${detailToDo.gpa}"/>
     </td>
 </table></center>
