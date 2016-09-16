@@ -13,7 +13,7 @@
         }
 
         td, th {
-            border: 1px solid #dddddd;
+            border: 2px solid #566573;
             text-align: left;
             padding: 8px;
         }
@@ -29,7 +29,7 @@
 <div></div>
 <center><h3>Student IDs</h3></center>
 <div></div>
-<center><table border="1">
+<center><table border="2">
     <c:forEach items="${stufftodo}" var="aToDo">
         <tr>
             <td>STUDENT ID:</td>

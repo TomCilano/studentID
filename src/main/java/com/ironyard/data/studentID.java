@@ -13,6 +13,20 @@ public class studentID {
     private double gradeTwo;
     private double gradeThree;
 
+    public studentID(String aName, String alast, String aDetail, long anId, double aGradeOne,
+                     double aGradeTwo, double aGradeThree)
+    {
+        name = aName;
+        last = alast;
+        detail = aDetail;
+        id = anId;
+        gradeOne = aGradeOne;
+        gradeTwo = aGradeTwo;
+        gradeThree= aGradeThree;
+        gpa = (gradeOne + gradeTwo + gradeThree) / 3;
+    }
+
+
     public double getGradeOne() {
         return gradeOne;
     }
@@ -39,21 +53,12 @@ public class studentID {
 
 
 
-    public studentID(String aName, String alast, String aDetail, long anId, double aGradeOne,
-                     double aGradeTwo, double aGradeThree){
-        name = aName;
-        last = alast;
-        detail = aDetail;
-        id = anId;
-        gradeOne = aGradeOne;
-        gradeTwo = aGradeTwo;
-        gradeThree= aGradeThree;
-        gpa = (gradeOne + gradeTwo + gradeThree) / 3;
 
 
 
 
-    }
+
+
 
     public long getId() {
         return id;
